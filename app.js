@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 
 // 静的ファイルの提供
-app.use(express.static(path.join(__dirname, 'docs')));
+app.use(express.static(path.join(__dirname, '/docs')));
 
 // "/" (ホームページ) のルート設定
 app.get('/', (req, res) => {
