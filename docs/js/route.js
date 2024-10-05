@@ -1,9 +1,11 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
     const path = window.location.pathname;
+    console.log(path);
 
     // test-node/(user_id)/mypage のURLに対応する
     if (path.match(/^\/test-node\/\d+\/mypage\/?$/)) {
+        console.log(path);
         const userId = path.split('/')[2];  // test-node の後の user_id を取得
         fetch('/mypage.html')  // test-node内のmypage.htmlを読み込む
             .then(response => response.text())
