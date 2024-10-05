@@ -4,11 +4,11 @@ const app = express();
 const path = require('path');
 
 // 静的ファイルの提供
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'docs')));
 
 // "/" (ホームページ) のルート設定
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/home.html'));
+    res.sendFile(path.join(__dirname, 'docs/home.html'));
 });
 
 // "/(user_id)/mypage" のルーティング設定

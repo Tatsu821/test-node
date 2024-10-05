@@ -7,7 +7,7 @@ const path = require('path');
 router.get('/:user_id/mypage', (req, res) => {
     const userId = req.params.user_id;
     // 静的ファイルを返す (user_idを使って動的処理を行う場合はEJSなどを使う)
-    res.sendFile(path.join(__dirname, '../public/mypage.html'));
+    res.sendFile(path.join(__dirname, '../docs/mypage.html'));
 });
 
 module.exports = router;
