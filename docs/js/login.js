@@ -26,7 +26,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
                 }
                 // alert(json.message+"\nHello    "+json.name);
                 loadingOverlay.style.display = "none";
-                window.location.href = `/${json.name}/mypage`;
+                window.location.href = `/mypage.html#${json.user_id}`;
             });
 
         })
