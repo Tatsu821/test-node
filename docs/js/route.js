@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ユーザーIDに基づいてmypageを表示する場合
     if (path.match(/^\/\d+\/mypage\/?$/)) {
         const userId = path.split('/')[1];
-        fetch('/pages/mypage.html')
+        fetch('/docs/mypage.html')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('content').innerHTML = html;
